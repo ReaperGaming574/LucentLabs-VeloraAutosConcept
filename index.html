@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velora Auto</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================
+             TOP NAV
+        ========================== -->
+
+        <header class="topbar">
+
+            <button class="brand nav-button" data-page="home">
+                <span class="brand-main">VELORA</span>
+                <span class="brand-sub">AUTOMOTIVE CARE</span>
+            </button>
+
+            <nav class="main-nav">
+
+                <button
+                    class="nav-button active"
+                    data-page="home"
+                >
+                    Home
+                </button>
+
+                <button
+                    class="nav-button"
+                    data-page="services"
+                >
+                    Services
+                </button>
+
+                <button
+                    class="nav-button"
+                    data-page="gallery"
+                >
+                    Gallery
+                </button>
+
+                <button
+                    class="nav-button"
+                    data-page="about"
+                >
+                    About
+                </button>
+
+            </nav>
+
+            <button
+                class="book-button nav-button"
+                data-page="booking"
+            >
+                Book
+            </button>
+
+        </header>
+
+
+        <!-- =========================
+             MAIN STAGE
+        ========================== -->
+
+        <main class="stage">
+
+
+            <!-- HOME -->
+
+            <section
+                class="page active"
+                id="home"
+            >
+
+                <div class="home-image image-panel">
+
+                    <div class="image-label">
+                        VELORA / 01
+                    </div>
+
+                    <div class="car-shape"></div>
+
+                </div>
+
+
+                <div class="home-copy">
+
+                    <span class="eyebrow">
+                        PREMIUM VEHICLE CARE
+                    </span>
+
+                    <h1>
+                        CARE,
+                        <br>
+                        <em>REFINED.</em>
+                    </h1>
+
+                    <p>
+                        Thoughtful detailing, paint correction
+                        and long-term protection for vehicles
+                        worth caring about.
+                    </p>
+
+                    <button
+                        class="inline-link nav-button"
+                        data-page="services"
+                    >
+                        Explore our services
+                        <span>↗</span>
+                    </button>
+
+                </div>
+
+
+                <div class="corner-note">
+                    <span>EST. 2026</span>
+                    <span>UNITED KINGDOM</span>
+                </div>
+
+            </section>
+
+
+            <!-- SERVICES -->
+
+            <section
+                class="page"
+                id="services"
+            >
+
+                <div class="services-left">
+
+                    <div class="page-heading">
+
+                        <span>
+                            SERVICES
+                        </span>
+
+                        <h2>
+                            Choose your
+                            <em>level of care.</em>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="service-list">
+
+                        <button
+                            class="service-option active"
+                            data-service="signature"
+                        >
+
+                            <span class="service-number">
+                                01
+                            </span>
+
+                            <span class="service-title">
+                                Signature Detail
+                            </span>
+
+                            <span class="service-price">
+                                £120
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="service-option"
+                            data-service="correction"
+                        >
+
+                            <span class="service-number">
+                                02
+                            </span>
+
+                            <span class="service-title">
+                                Paint Correction
+                            </span>
+
+                            <span class="service-price">
+                                £250
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="service-option"
+                            data-service="ceramic"
+                        >
+
+                            <span class="service-number">
+                                03
+                            </span>
+
+                            <span class="service-title">
+                                Ceramic Protection
+                            </span>
+
+                            <span class="service-price">
+                                £399
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="service-display">
+
+                    <div
+                        class="service-visual"
+                        id="serviceVisual"
+                    ></div>
+
+
+                    <div class="service-description">
+
+                        <div>
+
+                            <span id="serviceLabel">
+                                SIGNATURE DETAIL
+                            </span>
+
+                            <p id="serviceDescription">
+                                A complete exterior and interior
+                                treatment focused on cleanliness,
+                                finish and presentation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- GALLERY -->
+
+            <section
+                class="page"
+                id="gallery"
+            >
+
+                <div class="gallery-layout">
+
+                    <div
+                        class="gallery-main gallery-image"
+                        id="galleryMain"
+                    >
+
+                        <span>
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="gallery-side">
+
+                        <button
+                            class="gallery-thumb active"
+                            data-gallery="1"
+                        >
+                            01
+                        </button>
+
+                        <button
+                            class="gallery-thumb"
+                            data-gallery="2"
+                        >
+                            02
+                        </button>
+
+                        <button
+                            class="gallery-thumb"
+                            data-gallery="3"
+                        >
+                            03
+                        </button>
+
+                        <button
+                            class="gallery-thumb"
+                            data-gallery="4"
+                        >
+                            04
+                        </button>
+
+                    </div>
+
+
+                    <div class="gallery-copy">
+
+                        <span>
+                            SELECTED WORK
+                        </span>
+
+                        <h2>
+                            Finished
+                            <em>properly.</em>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ABOUT -->
+
+            <section
+                class="page"
+                id="about"
+            >
+
+                <div class="about-copy">
+
+                    <span class="eyebrow">
+                        ABOUT VELORA
+                    </span>
+
+                    <h2>
+                        The process
+                        <em>matters.</em>
+                    </h2>
+
+                    <p>
+                        Velora is a concept automotive care studio
+                        built around precision, preparation and
+                        consistency.
+                    </p>
+
+                    <p>
+                        Every treatment is approached with the same
+                        philosophy: take the time, use the right
+                        process, and finish the job properly.
+                    </p>
+
+                </div>
+
+
+                <div class="about-image image-panel">
+
+                    <span>
+                        THE VELORA STANDARD
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- BOOKING -->
+
+            <section
+                class="page"
+                id="booking"
+            >
+
+                <div class="booking-layout">
+
+                    <div class="booking-heading">
+
+                        <span>
+                            BOOKING
+                        </span>
+
+                        <h2>
+                            Let's look
+                            after your car.
+                        </h2>
+
+                    </div>
+
+
+                    <form class="booking-form">
+
+                        <label>
+                            Your name
+
+                            <input
+                                type="text"
+                                placeholder="Alex Morgan"
+                            >
+                        </label>
+
+                        <label>
+                            Email address
+
+                            <input
+                                type="email"
+                                placeholder="alex@example.com"
+                            >
+                        </label>
+
+                        <label>
+                            Vehicle
+
+                            <input
+                                type="text"
+                                placeholder="BMW M4"
+                            >
+                        </label>
+
+                        <label>
+                            Service
+
+                            <select>
+
+                                <option>
+                                    Signature Detail
+                                </option>
+
+                                <option>
+                                    Paint Correction
+                                </option>
+
+                                <option>
+                                    Ceramic Protection
+                                </option>
+
+                            </select>
+
+                        </label>
+
+                        <button type="button">
+
+                            Request Booking
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             BOTTOM BAR
+        ========================== -->
+
+        <footer class="bottom-bar">
+
+            <span>
+                CONCEPT PROJECT
+            </span>
+
+            <span id="currentPage">
+                01 / HOME
+            </span>
+
+            <span>
+                LUCENT LABS
+            </span>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
